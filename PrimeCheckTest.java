@@ -1,3 +1,5 @@
+// Michelle Wenig, Dani Barnaoui
+
 import org.junit.Assert;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
@@ -23,19 +25,19 @@ public class PrimeCheckTest {
   @Test
   public void testPrimes() {
     /* ToDo: insert a test here */
-    assertTrue("Test 3", PrimeCheck.isPrime(3));
-    assertTrue("Test 5", PrimeCheck.isPrime(5));
-    assertTrue("Test 7", PrimeCheck.isPrime(7));
-    assertTrue("Test 127", PrimeCheck.isPrime(127));
+    assertEquals("Test 3", true, PrimeCheck.isPrime(3));
+    assertEquals("Test 5", true, PrimeCheck.isPrime(5));
+    assertEquals("Test 7", true, PrimeCheck.isPrime(7));
+    assertEquals("Test 127", true, PrimeCheck.isPrime(127));
   }
 
   // --------------------------------------------------------------- //
   @Test
   public void testNonPrimes() {
     /* ToDo: insert a test here */
-    assertFalse("Test 4", PrimeCheck.isPrime(4));
-    assertFalse("Test 6", PrimeCheck.isPrime(6));
-    assertFalse("Test 8", PrimeCheck.isPrime(8));
-    assertFalse("Test 128", PrimeCheck.isPrime(128));
+    assertEquals("Test 4", false, PrimeCheck.isPrime(4));
+    assertEquals("Test 6", false, PrimeCheck.isPrime(6));
+    assertEquals("Test 8", false, PrimeCheck.isPrime(8));
+    assertEquals("Test 128", false, PrimeCheck.isPrime(128));
   }
 }
